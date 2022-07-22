@@ -6,6 +6,7 @@ services:
             context: .
         volumes:
             - ./:/app
+            - node_modules:/app/node_modules
 
     mongo:
         image: mongo:4.2.8
@@ -17,3 +18,4 @@ services:
 volumes:
     mongodb:
     mongodb_config:
+    node_modules:

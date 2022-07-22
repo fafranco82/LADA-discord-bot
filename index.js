@@ -18,7 +18,8 @@ const client = new CommandoClient({
 client.registry
     .registerDefaultTypes()
     .registerGroups([
-        ['cartas', 'Comandos relacionados con cartas']
+        ['cartas', 'Comandos relacionados con cartas'],
+        ['test', 'Comandos de pruebas']
     ])
     .registerDefaultGroups()
     .registerDefaultCommands()
@@ -68,4 +69,4 @@ client.setProvider(new KeyvProvider(new Keyv('mongodb://mongo:27017/lada-bot', {
     namespace: 'settings'
 })));
 
-client.login('ODQxMzgzNDg1OTY4MjIwMTkw.YJl9bw.TrTIMn1VtzVeZM9cHp6IzaHsA1E');
+client.login('ODQxMzgzNDg1OTY4MjIwMTkw.YJl9bw.QbWDeid7k6ifReBqgEqoQk6C9oY');
